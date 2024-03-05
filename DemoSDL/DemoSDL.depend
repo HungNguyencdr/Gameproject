@@ -3,3 +3,8 @@
 	<iostream>
 	<SDL.h>
 
+1709302288 source:d:\github\gameproject\demosdl\main.cpp
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+

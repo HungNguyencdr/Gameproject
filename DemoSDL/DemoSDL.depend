@@ -3,8 +3,14 @@
 	<iostream>
 	<SDL.h>
 
-1709302288 source:d:\github\gameproject\demosdl\main.cpp
+1710327646 source:d:\github\gameproject\demosdl\main.cpp
 	<iostream>
 	<SDL.h>
 	<SDL_image.h>
+	"Fuction.h"
+	"image_h.h"
+
+1709632349 d:\github\gameproject\demosdl\fuction.h
+
+1709632251 d:\github\gameproject\demosdl\image_h.h
 

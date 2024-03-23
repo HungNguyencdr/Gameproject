@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1711130078 source:d:\github\gameproject\home2\home2\main.cpp
+	<SDL.h>
+	<SDL_image.h>
+	<iostream>
+	<windows.h>
+	"start.h"
+	"functions.h"
+	"inventory.h"
+
+1711030790 d:\github\gameproject\home2\home2\start.h
+	<SDL.h>
+	<vector>
+	<SDL_image.h>
+	<iostream>
+
+1711101127 d:\github\gameproject\home2\home2\functions.h
+	<SDL.h>
+	<SDL_image.h>
+
+1711159198 d:\github\gameproject\home2\home2\inventory.h
+	<SDL.h>
+	<SDL_image.h>
+	"objects.h"
+	<vector>
+
+1711105786 d:\github\gameproject\home2\home2\objects.h
+	<SDL.h>
+	<SDL_image.h>
+

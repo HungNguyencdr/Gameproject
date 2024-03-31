@@ -15,6 +15,15 @@ bool Find_Object(objects &a)
         }
         return 0;
 }
+bool Object_exist(objects &a,vector<objects>inventory)
+{
+    for(int i=0;i<inventory.size();i++)
+        {
+            if(a.object_code==inventory[i].object_code){return 1;}
+
+        }
+        return 0;
+}
 
 
 #endif // INVENTORY_H_INCLUDED

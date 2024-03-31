@@ -9,4 +9,5 @@ struct objects
 };
 objects gun{"001"};
 objects crowbar{"002"};
+objects bullet{"003"};
 #endif // OBJECTS_H_INCLUDED

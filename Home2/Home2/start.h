@@ -4,7 +4,7 @@
 #include <vector>
 #include <SDL_image.h>
 #include <iostream>
-
+// file nay cung duoc hieu la file graphics.h
 using namespace std;
 int frameI =0;
 int countMHC=0;
@@ -78,12 +78,10 @@ void startEye(SDL_Renderer*renderer,SDL_Texture*texture,const char* path)
     SDL_Rect rectB{0,0,305,184};
     texture=IMG_LoadTexture(renderer,path);
     SDL_RenderCopy(renderer,texture,NULL,&rectB);
-
 }
 void BlinkEye_PressW(int &frameI,SDL_Renderer*renderer,SDL_Texture*texture)
 {
     SDL_Rect rectB{233,210,305,184};
-
     texture=IMG_LoadTexture(renderer,"image\\start.png");
     SDL_RenderCopy(renderer,texture,NULL,NULL);
     texture=IMG_LoadTexture(renderer,Eyes[frameI]);
@@ -123,14 +121,40 @@ void PressW(int &frameI,SDL_Renderer*renderer,SDL_Texture*texture)
         frameI++;
         SDL_Delay(150);
     }
+
 }
 void wordsPressToStart(SDL_Renderer*renderer,SDL_Texture*texture,const char* path)
 {
     SDL_Rect rectB{100,100,232,39};
     texture=IMG_LoadTexture(renderer,path);
     SDL_RenderCopy(renderer,texture,NULL,&rectB);
-
 }
+void arrow(SDL_Renderer*renderer,SDL_Texture*texture)
+{
+    SDL_Rect rect{50,306,700,100};
+    int timer=0;
+    SDL_Event event;
+    bool b=0;
+    while(b==0)
+    {
+        while(SDL_PollEvent(&event))
+        {
+            if(event.key.keysym.scancode==SDL_SCANCODE_SPACE)
+                {
+                    b=1;
+                }
+        }
+        if(timer>3000000)
+        {
+           texture=IMG_LoadTexture(renderer,"image\\arrow.png");
+           SDL_RenderCopy(renderer,texture,NULL,&rect);
+           SDL_RenderPresent(renderer);
+
+        }
+        else{timer++;}
+    }
+}
+
 
 #endif // START_H_INCLUDED
 

@@ -21,7 +21,7 @@ void LoadMessage(SDL_Renderer *renderer,SDL_Texture *texture,const char* path)
 void LoadQuestion(SDL_Renderer *renderer,SDL_Texture *texture,const char* path)
 {
     texture =IMG_LoadTexture(renderer,path);
-    SDL_Rect rect{0,306,700,100};
+    SDL_Rect rect{50,306,700,100};
     SDL_RenderCopy(renderer,texture,NULL,&rect);
     SDL_RenderPresent(renderer);
 }
@@ -74,7 +74,9 @@ void Present_Clear_Renderer(SDL_Renderer*renderer)
 {
     SDL_RenderPresent(renderer);
     SDL_RenderClear(renderer);
+    SDL_DestroyRenderer(renderer);
 }
+
 
 
 #endif // FUNCTIONS_H_INCLUDED

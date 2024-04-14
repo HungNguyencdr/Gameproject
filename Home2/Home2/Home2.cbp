@@ -39,6 +39,9 @@
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Unit filename="main.cpp" />
+		<Unit filename="minigame.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="objects.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>

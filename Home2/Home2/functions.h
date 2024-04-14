@@ -9,7 +9,6 @@ void LoadTexture(SDL_Renderer *renderer,SDL_Texture *texture,const char* path)
     SDL_Rect rect{50,50,384,256};
     SDL_RenderCopy(renderer,texture,NULL,&rect);
     SDL_RenderPresent(renderer);
-
 }
 void LoadMessage(SDL_Renderer *renderer,SDL_Texture *texture,const char* path)
 {
@@ -40,11 +39,7 @@ void Pick_Yes_No(bool &ctl)
                     if(event.type==SDL_QUIT){bn=1;}
                     else if(event.type==SDL_MOUSEBUTTONUP&&x>50&&x<400&&y>=406&&y<=550){ctl=1;bn=1;}
                     else if(event.type==SDL_MOUSEBUTTONUP&&x>400&&x<750&&y>=406&&y<=550){ctl=0;bn=1;}
-
                 }
-
-
-
         }
 }
 void Yes_No(SDL_Renderer *renderer,SDL_Texture *texture)

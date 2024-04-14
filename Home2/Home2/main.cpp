@@ -5,16 +5,24 @@
 #include "start.h"
 #include "functions.h"
 #include "inventory.h"
+#include "minigame.h"
+#include <SDL_mixer.h>
 using namespace std;
 int main(int argc,char*argv[])
 {
     SDL_Init(SDL_INIT_EVERYTHING);
+    Mix_Init(MIX_INIT_MP3);
+    Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 2048);
+    Mix_Music* backgroundMusic = Mix_LoadMUS("sounds\\song1.mp3");
+    Mix_Chunk* soundEffect = Mix_LoadWAV("sounds\\song2.mp3");
+    Mix_Chunk *soundEffect_Walking=Mix_LoadWAV("sounds\\Walking_sound.mp3");
     SDL_Window*window = SDL_CreateWindow("SDL2 Window", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 800, 600, SDL_WINDOW_SHOWN);
     SDL_Renderer*renderer=SDL_CreateRenderer(window,-1,0);
     SDL_Texture*texture=IMG_LoadTexture(renderer,"image\\start.png");
     SDL_RenderCopy(renderer,texture,NULL,NULL);
     SDL_RenderPresent(renderer);
-    SDL_Delay(5000);
+    Mix_PlayMusic(backgroundMusic, -1);cerr<<"ok1";
+    SDL_Delay(10000);
     SDL_Event event;
     int bol=0;
     int frameI =0;
@@ -39,6 +47,9 @@ int main(int argc,char*argv[])
     }
     if(bol==2)
     {
+        Mix_PauseMusic();
+        backgroundMusic = Mix_LoadMUS("sounds\\music_background.mp3");
+        Mix_PlayChannel(-1, soundEffect, 0);
         while(countEYE<=24)
         {
             BlinkEye_PressW(countEYE,renderer,texture);
@@ -64,6 +75,8 @@ int main(int argc,char*argv[])
     SDL_Delay(1000);
 
 // ------------------------------- xong doan dau ------------------------------ //
+    Mix_ResumeMusic();
+    Mix_PlayMusic(backgroundMusic, -1);
     LoadTexture(renderer,texture,"image\\Texture\\PT1.jpg");
     SDL_Delay(3000);
     LoadMessage(renderer,texture,"image\\Message\\MS1.png");
@@ -190,6 +203,17 @@ int main(int argc,char*argv[])
                 {
                     LoadMessage(renderer,texture,"image\\message\\MSEnd1.png");
                     waitUntilKetPressed();
+                    SDL_RenderClear(renderer);
+                    Mix_HaltChannel(-1);
+           Mix_PlayChannel(-1, soundEffect, 0);
+                    End2_1(renderer,texture);
+                    End2_2(renderer,texture);
+                    SDL_Delay(3000);
+                    Mix_FreeMusic(backgroundMusic);
+                    Mix_FreeChunk(soundEffect);
+                    Mix_CloseAudio();
+                    Mix_Quit();
+
                     SDL_DestroyRenderer(renderer);
                     SDL_DestroyTexture(texture);
                     SDL_DestroyWindow(window);
@@ -227,6 +251,7 @@ int main(int argc,char*argv[])
     waitUntilKetPressed();
     if(ctl==1)
         {
+           Mix_PauseMusic();
            LoadTexture(renderer,texture,"image\\texture\\PT15.jpg");
            waitUntilKetPressed();
            LoadMessage(renderer,texture,"image\\message\\MS15.png");
@@ -237,11 +262,20 @@ int main(int argc,char*argv[])
            waitUntilKetPressed();
            LoadMessage(renderer,texture,"image\\message\\MS15_3.png");
            waitUntilKetPressed();
-           SDL_DestroyRenderer(renderer);
-           SDL_DestroyTexture(texture);
-           SDL_DestroyWindow(window);
-           SDL_Quit();
-           return 0;
+
+           Mix_PlayChannel(-1, soundEffect, 0);
+           Bad_End(renderer,texture);
+           SDL_Delay(4000);
+            Mix_FreeMusic(backgroundMusic);
+        Mix_FreeChunk(soundEffect);
+        Mix_CloseAudio();
+        Mix_Quit();
+
+        SDL_DestroyRenderer(renderer);
+        SDL_DestroyTexture(texture);
+        SDL_DestroyWindow(window);
+        SDL_Quit();
+        return 0;
            // chet do vao nham phong :)))
         }
     else
@@ -316,39 +350,68 @@ int main(int argc,char*argv[])
     LoadMessage(renderer,texture,"image\\message\\MS17_4.png");
     waitUntilKetPressed();
     LoadMessage(renderer,texture,"image\\message\\MS17_5.png");
+    Mix_PauseMusic();
+
     waitUntilKetPressed();
     LoadMessage(renderer,texture,"image\\message\\MS17_6.png");
     waitUntilKetPressed();
-    // minigame
-
-    LoadMessage(renderer,texture,"image\\message\\MS18.png");
+    LoadMessage(renderer,texture,"image\\message\\MS17_7.png");
     waitUntilKetPressed();
-    // tieng buoc chan
+    // minigame
+    piece_of_paper a{"image\\minigame\\Paper1.png",0,0,0,0,0,0};
+    piece_of_paper b{"image\\minigame\\Paper2.png",650,300,0,0,0,0};
+    run_minigame(a,b,renderer,texture);
+    waitUntilKetPressed();
+
+    SDL_RenderClear(renderer);
+    Mix_PlayChannel(-1,soundEffect_Walking,0);
+    LoadTexture(renderer,texture,"image\\texture\\PT18.jpg");// tieng buoc chan
+    LoadMessage(renderer,texture,"image\\message\\MS18.png");
+    while (Mix_Playing(-1)) {
+    // Đợi cho đến khi âm thanh hiệu ứng kết thúc
+}
+    waitUntilKetPressed();
 
     LoadQuestion(renderer,texture,"image\\Questions\\QS7.png");
     Yes_No(renderer,texture);
     Pick_Yes_No(ctl);
     if(ctl==1)
         {
-          SDL_DestroyRenderer(renderer);
-          SDL_DestroyTexture(texture);
-          SDL_DestroyWindow(window);
-          SDL_Quit();
-          return 0;
+            Mix_PauseMusic();
+            Mix_PlayChannel(-1, soundEffect, 0);
+          Bad_End(renderer,texture);
+          texture=IMG_LoadTexture(renderer,"image\\End1\\Skull50_1.png");
+          SDL_RenderCopy(renderer,texture,NULL,NULL);
+          SDL_RenderPresent(renderer);
+          SDL_Delay(4000);
+          Mix_FreeMusic(backgroundMusic);
+        Mix_FreeChunk(soundEffect);
+        Mix_CloseAudio();
+        Mix_Quit();
+
+        SDL_DestroyRenderer(renderer);
+        SDL_DestroyTexture(texture);
+        SDL_DestroyWindow(window);
+        SDL_Quit();
+        return 0;
         }// end vi tien lai gan cua, bi sat nhan dam chet
     else
         {
             if(Object_exist(gun,inventory)==1)
             {
                 LoadQuestion(renderer,texture,"image\\Questions\\Qs8.png");
-
-
                 Pick_Yes_No(ctl);
                 if(ctl==0)
                 {
-                    SDL_RenderClear(renderer);
-                    SDL_RenderPresent(renderer);
-                    waitUntilKetPressed();
+                    Mix_PauseMusic();
+            Mix_PlayChannel(-1, soundEffect, 0);
+                    Bad_End(renderer,texture);
+                    SDL_Delay(4000);
+                     Mix_FreeMusic(backgroundMusic);
+                    Mix_FreeChunk(soundEffect);
+                    Mix_CloseAudio();
+                    Mix_Quit();
+
                     SDL_DestroyRenderer(renderer);
                     SDL_DestroyTexture(texture);
                     SDL_DestroyWindow(window);
@@ -356,13 +419,20 @@ int main(int argc,char*argv[])
                     return 0;
                     //end vi khong cam sung len tu ve
                 }
-
             }
             else
             {
+                Mix_PauseMusic();
+            Mix_PlayChannel(-1, soundEffect, 0);
                     SDL_RenderClear(renderer);
                     SDL_RenderPresent(renderer);
-                    waitUntilKetPressed();
+                    Bad_End(renderer,texture);
+                    SDL_Delay(4000);
+                     Mix_FreeMusic(backgroundMusic);
+                    Mix_FreeChunk(soundEffect);
+                    Mix_CloseAudio();
+                    Mix_Quit();
+
                     SDL_DestroyRenderer(renderer);
                     SDL_DestroyTexture(texture);
                     SDL_DestroyWindow(window);
@@ -412,6 +482,8 @@ int main(int argc,char*argv[])
     waitUntilKetPressed();
     if(Object_exist(crowbar,inventory)==0)
         {
+            Mix_PauseMusic();
+
             LoadMessage(renderer,texture,"image\\message\\MS22_3.png");
             waitUntilKetPressed();
             LoadMessage(renderer,texture,"image\\message\\MSPause.png");
@@ -428,6 +500,15 @@ int main(int argc,char*argv[])
             waitUntilKetPressed();
             LoadMessage(renderer,texture,"image\\message\\MS15_3.png");
             waitUntilKetPressed();
+            Mix_PlayChannel(-1, soundEffect, 0);
+            Bad_End(renderer,texture);
+            SDL_Delay(4000);
+
+             Mix_FreeMusic(backgroundMusic);
+            Mix_FreeChunk(soundEffect);
+            Mix_CloseAudio();
+            Mix_Quit();
+
             SDL_DestroyRenderer(renderer);
             SDL_DestroyTexture(texture);
             SDL_DestroyWindow(window);
@@ -445,7 +526,8 @@ int main(int argc,char*argv[])
     SDL_RenderClear(renderer);
     LoadMessage(renderer,texture,"image\\message\\MS23_1.png");
     waitUntilKetPressed();
-
+    backgroundMusic = Mix_LoadMUS("sounds\\music2.mp3");
+    Mix_PlayMusic(backgroundMusic, -1);cerr<<"ok2 ";
     LoadMessage(renderer,texture,"image\\message\\MS24.png");
     waitUntilKetPressed();
     LoadMessage(renderer,texture,"image\\message\\MS25.png");
@@ -479,7 +561,16 @@ int main(int argc,char*argv[])
     waitUntilKetPressed();
     if(Object_exist(gun,inventory)==0)
         {
+            Mix_PauseMusic();
+            Mix_PlayChannel(-1, soundEffect, 0);
             //end do khong dem theo sung
+            Bad_End(renderer,texture);
+            SDL_Delay(4000);
+            Mix_FreeMusic(backgroundMusic);
+            Mix_FreeChunk(soundEffect);
+            Mix_CloseAudio();
+            Mix_Quit();
+
             SDL_DestroyRenderer(renderer);
             SDL_DestroyTexture(texture);
             SDL_DestroyWindow(window);
@@ -495,12 +586,24 @@ int main(int argc,char*argv[])
     SDL_RenderClear(renderer);
     if(ctl==0)
     {
+
+
         LoadMessage(renderer,texture,"image\\message\\MS39_IF_NO.png");
         waitUntilKetPressed();
         LoadMessage(renderer,texture,"image\\message\\MS39_IF_NO2.png");
         waitUntilKetPressed();
         LoadMessage(renderer,texture,"image\\message\\MS39_IF_NO3.png");
-        waitUntilKetPressed();
+        waitUntilKetPressed();Mix_PauseMusic();
+        Mix_PlayChannel(-1, soundEffect, 0);
+        Bad_End(renderer,texture);
+
+        SDL_Delay(4000);
+
+         Mix_FreeMusic(backgroundMusic);
+        Mix_FreeChunk(soundEffect);
+        Mix_CloseAudio();
+        Mix_Quit();
+
         SDL_DestroyRenderer(renderer);
         SDL_DestroyTexture(texture);
         SDL_DestroyWindow(window);
@@ -512,6 +615,12 @@ int main(int argc,char*argv[])
     {
         LoadMessage(renderer,texture,"image\\message\\MSP_IF_YES_BULLET_0.png");
         waitUntilKetPressed();
+
+        Mix_FreeMusic(backgroundMusic);
+        Mix_FreeChunk(soundEffect);
+        Mix_CloseAudio();
+        Mix_Quit();
+
         SDL_DestroyRenderer(renderer);
         SDL_DestroyTexture(texture);
         SDL_DestroyWindow(window);
@@ -530,14 +639,23 @@ int main(int argc,char*argv[])
         LoadMessage(renderer,texture,"image\\message\\HappyEnding.png");
         waitUntilKetPressed();
         //minigame?
+        Mix_FreeMusic(backgroundMusic);
+        Mix_FreeChunk(soundEffect);
+        Mix_CloseAudio();
+        Mix_Quit();
+
         SDL_DestroyRenderer(renderer);
         SDL_DestroyTexture(texture);
         SDL_DestroyWindow(window);
         SDL_Quit();
         return 0;
     }
-
 //-------------------------------- End ---------------------------------------- //
+        Mix_FreeMusic(backgroundMusic);
+        Mix_FreeChunk(soundEffect);
+        Mix_CloseAudio();
+        Mix_Quit();
+
         SDL_DestroyRenderer(renderer);
         SDL_DestroyTexture(texture);
         SDL_DestroyWindow(window);

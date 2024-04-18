@@ -2,6 +2,7 @@
 #define MINIGAME_H_INCLUDED
 #include <SDL.h>
 #include <SDL_image.h>
+#include <cstdlib>
 using namespace std;
 struct piece_of_paper
 {
@@ -161,6 +162,37 @@ void run_minigame(piece_of_paper &a,piece_of_paper &b,SDL_Renderer *renderer,SDL
     SDL_DestroyTexture(textureA);
     SDL_DestroyTexture(textureB);
 }
+void unlocking(SDL_Renderer *renderer,SDL_Texture *texture)
+{
+    const char* lock[6]={
+        "image\\minigame\\Lock1.png",
+        "image\\minigame\\Lock2.png",
+        "image\\minigame\\Lock3.png",
+        "image\\minigame\\Lock4.png",
+        "image\\minigame\\Lock5.png",
+        "image\\minigame\\Lock6.png"
+    };
+    bool WhileMiniGameIsRunning=0;
+    SDL_Event event;
+
+    while(WhileMiniGameIsRunning==0)
+    {
+        int i=rand()%6;
+        while(SDL_PollEvent(&event))
+        {
+            if(event.type==SDL_QUIT){WhileMiniGameIsRunning=1;}
+            else if(event.type==SDL_KEYDOWN&&event.key.keysym.scancode==SDL_SCANCODE_SPACE&&i==0)
+            {
+                WhileMiniGameIsRunning=1;
+            }
+        }
+        texture=IMG_LoadTexture(renderer,lock[i]);
+        SDL_RenderCopy(renderer,texture,NULL,NULL);
+        SDL_RenderPresent(renderer);
+        SDL_Delay(200);
+    }
+}
+
 
 
 #endif // MINIGAME_H_INCLUDED

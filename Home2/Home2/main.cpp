@@ -21,7 +21,7 @@ int main(int argc,char*argv[])
     SDL_Texture*texture=IMG_LoadTexture(renderer,"image\\start.png");
     SDL_RenderCopy(renderer,texture,NULL,NULL);
     SDL_RenderPresent(renderer);
-    Mix_PlayMusic(backgroundMusic, -1);cerr<<"ok1";
+    Mix_PlayMusic(backgroundMusic, -1);
     SDL_Delay(10000);
     SDL_Event event;
     int bol=0;
@@ -38,9 +38,7 @@ int main(int argc,char*argv[])
             {
                 bol=2;
             }
-
         }
-
         PressW(frameI,renderer,texture);
         SDL_RenderPresent(renderer);
 
@@ -75,6 +73,9 @@ int main(int argc,char*argv[])
     SDL_Delay(1000);
 
 // ------------------------------- xong doan dau ------------------------------ //
+bool GameIsRunning=0;
+while(GameIsRunning==0)
+    {
     Mix_ResumeMusic();
     Mix_PlayMusic(backgroundMusic, -1);
     LoadTexture(renderer,texture,"image\\Texture\\PT1.jpg");
@@ -85,13 +86,10 @@ int main(int argc,char*argv[])
     SDL_RenderPresent(renderer);
     SDL_Delay(3000);
     LoadTexture(renderer,texture,"image\\Texture\\PT_comment.jpg");
-
     SDL_Delay(1000);
     LoadMessage(renderer,texture,"image\\comment1.png");
-
     arrow(renderer,texture);
     LoadQuestion(renderer,texture,"image\\Questions\\QS1.png");
-
     waitUntilKetPressed();
     Yes_No(renderer,texture);
     Pick_Yes_No(ctl);
@@ -99,7 +97,6 @@ int main(int argc,char*argv[])
     SDL_RenderClear(renderer);
     SDL_RenderPresent(renderer);
     waitUntilKetPressed();
-
     LoadTexture(renderer,texture,"image\\texture\\PT2.jpg");
     waitUntilKetPressed();
     LoadMessage(renderer,texture,"image\\message\\MS2.png");
@@ -107,7 +104,6 @@ int main(int argc,char*argv[])
     SDL_RenderClear(renderer);
     SDL_RenderPresent(renderer);
     waitUntilKetPressed();
-
     LoadTexture(renderer,texture,"image\\texture\\PT3.jpg");
     waitUntilKetPressed();
     LoadMessage(renderer,texture,"image\\message\\MS3.png");
@@ -115,13 +111,11 @@ int main(int argc,char*argv[])
     SDL_RenderClear(renderer);
     SDL_RenderPresent(renderer);
     waitUntilKetPressed();
-
     LoadTexture(renderer,texture,"image\\texture\\PT4.jpg");
     waitUntilKetPressed();
     LoadMessage(renderer,texture,"image\\message\\MS4.png");
     waitUntilKetPressed();
     SDL_RenderClear(renderer);
-
     LoadTexture(renderer,texture,"image\\texture\\PT5.jpg");
     waitUntilKetPressed();
     LoadMessage(renderer,texture,"image\\message\\MS5.png");
@@ -138,8 +132,12 @@ int main(int argc,char*argv[])
     {
         LoadTexture(renderer,texture,"image\\texture\\PT5.jpg");
         waitUntilKetPressed();
+
+        unlocking(renderer,texture);
+
+        SDL_RenderClear(renderer);
         LoadMessage(renderer,texture,"image\\message\\MSn.png");
-        waitUntilKetPressed();
+        SDL_Delay(2000);
         Receive_Object(crowbar);
         SDL_RenderClear(renderer);
         SDL_RenderPresent(renderer);
@@ -205,10 +203,12 @@ int main(int argc,char*argv[])
                     waitUntilKetPressed();
                     SDL_RenderClear(renderer);
                     Mix_HaltChannel(-1);
-           Mix_PlayChannel(-1, soundEffect, 0);
+                    Mix_PlayChannel(-1, soundEffect, 0);
                     End2_1(renderer,texture);
                     End2_2(renderer,texture);
                     SDL_Delay(3000);
+
+
                     Mix_FreeMusic(backgroundMusic);
                     Mix_FreeChunk(soundEffect);
                     Mix_CloseAudio();
@@ -219,6 +219,7 @@ int main(int argc,char*argv[])
                     SDL_DestroyWindow(window);
                     SDL_Quit();
                     return 0;
+
                     //end
                 }
             else
@@ -266,7 +267,8 @@ int main(int argc,char*argv[])
            Mix_PlayChannel(-1, soundEffect, 0);
            Bad_End(renderer,texture);
            SDL_Delay(4000);
-            Mix_FreeMusic(backgroundMusic);
+
+        Mix_FreeMusic(backgroundMusic);
         Mix_FreeChunk(soundEffect);
         Mix_CloseAudio();
         Mix_Quit();
@@ -379,12 +381,12 @@ int main(int argc,char*argv[])
         {
             Mix_PauseMusic();
             Mix_PlayChannel(-1, soundEffect, 0);
-          Bad_End(renderer,texture);
-          texture=IMG_LoadTexture(renderer,"image\\End1\\Skull50_1.png");
-          SDL_RenderCopy(renderer,texture,NULL,NULL);
-          SDL_RenderPresent(renderer);
-          SDL_Delay(4000);
-          Mix_FreeMusic(backgroundMusic);
+              Bad_End(renderer,texture);
+              texture=IMG_LoadTexture(renderer,"image\\End1\\Skull50_1.png");
+              SDL_RenderCopy(renderer,texture,NULL,NULL);
+              SDL_RenderPresent(renderer);
+              SDL_Delay(4000);
+              Mix_FreeMusic(backgroundMusic);
         Mix_FreeChunk(soundEffect);
         Mix_CloseAudio();
         Mix_Quit();
@@ -404,14 +406,13 @@ int main(int argc,char*argv[])
                 if(ctl==0)
                 {
                     Mix_PauseMusic();
-            Mix_PlayChannel(-1, soundEffect, 0);
+                    Mix_PlayChannel(-1, soundEffect, 0);
                     Bad_End(renderer,texture);
                     SDL_Delay(4000);
-                     Mix_FreeMusic(backgroundMusic);
+                    Mix_FreeMusic(backgroundMusic);
                     Mix_FreeChunk(soundEffect);
                     Mix_CloseAudio();
                     Mix_Quit();
-
                     SDL_DestroyRenderer(renderer);
                     SDL_DestroyTexture(texture);
                     SDL_DestroyWindow(window);
@@ -422,17 +423,16 @@ int main(int argc,char*argv[])
             }
             else
             {
-                Mix_PauseMusic();
-            Mix_PlayChannel(-1, soundEffect, 0);
+                    Mix_PauseMusic();
+                    Mix_PlayChannel(-1, soundEffect, 0);
                     SDL_RenderClear(renderer);
                     SDL_RenderPresent(renderer);
                     Bad_End(renderer,texture);
                     SDL_Delay(4000);
-                     Mix_FreeMusic(backgroundMusic);
+                    Mix_FreeMusic(backgroundMusic);
                     Mix_FreeChunk(soundEffect);
                     Mix_CloseAudio();
                     Mix_Quit();
-
                     SDL_DestroyRenderer(renderer);
                     SDL_DestroyTexture(texture);
                     SDL_DestroyWindow(window);
@@ -527,7 +527,7 @@ int main(int argc,char*argv[])
     LoadMessage(renderer,texture,"image\\message\\MS23_1.png");
     waitUntilKetPressed();
     backgroundMusic = Mix_LoadMUS("sounds\\music2.mp3");
-    Mix_PlayMusic(backgroundMusic, -1);cerr<<"ok2 ";
+    Mix_PlayMusic(backgroundMusic, -1);
     LoadMessage(renderer,texture,"image\\message\\MS24.png");
     waitUntilKetPressed();
     LoadMessage(renderer,texture,"image\\message\\MS25.png");
@@ -638,6 +638,11 @@ int main(int argc,char*argv[])
         waitUntilKetPressed();
         LoadMessage(renderer,texture,"image\\message\\HappyEnding.png");
         waitUntilKetPressed();
+        Mix_PauseMusic();
+        SDL_RenderClear(renderer);
+        SDL_RenderPresent(renderer);
+        Happy_Ending(renderer,texture);
+        waitUntilKetPressed();
         //minigame?
         Mix_FreeMusic(backgroundMusic);
         Mix_FreeChunk(soundEffect);
@@ -650,6 +655,7 @@ int main(int argc,char*argv[])
         SDL_Quit();
         return 0;
     }
+}
 //-------------------------------- End ---------------------------------------- //
         Mix_FreeMusic(backgroundMusic);
         Mix_FreeChunk(soundEffect);
@@ -661,4 +667,6 @@ int main(int argc,char*argv[])
         SDL_DestroyWindow(window);
         SDL_Quit();
         return 0;
+
+
 }

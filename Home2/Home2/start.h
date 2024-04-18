@@ -4,7 +4,7 @@
 #include <vector>
 #include <SDL_image.h>
 #include <iostream>
-// file nay cung duoc hieu la file graphics.h
+
 using namespace std;
 int frameI =0;
 int countMHC=0;
@@ -215,6 +215,48 @@ void End2_2(SDL_Renderer *renderer,SDL_Texture *texture)
         SDL_RenderPresent(renderer);
         SDL_Delay(30);
         }
+    }
+}
+void Happy_Ending(SDL_Renderer*renderer,SDL_Texture*texture)
+{
+    const char* Ending[18]={
+        "image\\Happy_Ending\\E1.png",
+        "image\\Happy_Ending\\E2.png",
+        "image\\Happy_Ending\\E3.png",
+        "image\\Happy_Ending\\E4.png",
+        "image\\Happy_Ending\\E5.png",
+        "image\\Happy_Ending\\E6.png",
+        "image\\Happy_Ending\\E7.png",
+        "image\\Happy_Ending\\E8.png",
+        "image\\Happy_Ending\\E9.png",
+        "image\\Happy_Ending\\E10.png",
+        "image\\Happy_Ending\\E11.png",
+        "image\\Happy_Ending\\E12.png",
+        "image\\Happy_Ending\\E13.png",
+        "image\\Happy_Ending\\E14.png",
+        "image\\Happy_Ending\\E15.png",
+        "image\\Happy_Ending\\E16.png",
+        "image\\Happy_Ending\\E17.png",
+        "image\\Happy_Ending\\E18.png",
+    };
+    bool GameIsEnding=0;
+    SDL_Event event;
+    int currentFrame=0;
+    while(GameIsEnding==0)
+    {
+        while(SDL_PollEvent(&event))
+              {
+                 if(event.type==SDL_QUIT){GameIsEnding=1;}
+              }
+        if(currentFrame==18){GameIsEnding=1;}
+        else
+            {
+                texture=IMG_LoadTexture(renderer,Ending[currentFrame]);
+                SDL_RenderCopy(renderer,texture,NULL,NULL);
+                SDL_RenderPresent(renderer);
+                SDL_Delay(50);
+                currentFrame++;
+            }
     }
 }
 void startEye(SDL_Renderer*renderer,SDL_Texture*texture,const char* path)

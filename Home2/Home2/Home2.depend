@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1713411500 source:d:\github\gameproject\home2\home2\main.cpp
+1713412021 source:d:\github\gameproject\home2\home2\main.cpp
 	<SDL.h>
 	<SDL_image.h>
 	<iostream>
@@ -16,7 +16,7 @@
 	<SDL_image.h>
 	<iostream>
 
-1713372383 d:\github\gameproject\home2\home2\functions.h
+1713412021 d:\github\gameproject\home2\home2\functions.h
 	<SDL.h>
 	<SDL_image.h>
 

@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1713412021 source:d:\github\gameproject\home2\home2\main.cpp
+1714239774 source:d:\github\gameproject\home2\home2\main.cpp
 	<SDL.h>
 	<SDL_image.h>
 	<iostream>
@@ -9,16 +9,24 @@
 	"inventory.h"
 	"minigame.h"
 	<SDL_mixer.h>
+	<fstream>
+	<cstring>
+	"messages.h"
 
-1713349576 d:\github\gameproject\home2\home2\start.h
+1713530605 d:\github\gameproject\home2\home2\start.h
 	<SDL.h>
 	<vector>
 	<SDL_image.h>
 	<iostream>
 
-1713412021 d:\github\gameproject\home2\home2\functions.h
+1714229001 d:\github\gameproject\home2\home2\functions.h
 	<SDL.h>
 	<SDL_image.h>
+	<fstream>
+	<cstring>
+	<SDL_ttf.h>
+	<string>
+	"messages.h"
 
 1711245267 d:\github\gameproject\home2\home2\inventory.h
 	<SDL.h>
@@ -30,8 +38,14 @@
 	<SDL.h>
 	<SDL_image.h>
 
-1713411500 d:\github\gameproject\home2\home2\minigame.h
+1713773361 d:\github\gameproject\home2\home2\minigame.h
 	<SDL.h>
 	<SDL_image.h>
 	<cstdlib>
+
+1714210007 d:\github\gameproject\home2\home2\messages.h
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+	<vector>
 

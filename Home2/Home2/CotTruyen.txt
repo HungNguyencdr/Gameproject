@@ -1,0 +1,359 @@
+4\/1/0
+- How long have you been there?         
+- For a while, sir.                     
+- Alright. Hurry up, I want to end this 
+soon.                                   
+2\/1/1
+   Thực tập sinh của bạn đã rời đi, giờ 
+bạn phải tìm cách xử lí vụ án một mình. 
+5\/1/2
+   Bạn bước vào trong ngọn hải đăng cũ  
+kĩ, khung cảnh mở ra trước mắt bạn là   
+một mớ hỗn độn. Phía bên trong góc     
+phòng là một hòm đồ cũ kĩ, bạn tiến lại 
+gần và bắt đầu tìm manh mối.            
+4\/1/3
+   Trước mặt bạn là một cái hòm cũ, bạn 
+không biết bên trong chứa cái gì và nó  
+khiến cho bạn cảm thấy bất an. Bạn có   
+muốn mở nó không?                       
+1\/0/4
+   Bạn tìm thấy một cây xà beng         
+4\/1/5
+  Đi dọc theo hành lang, bạn thấy một   
+tấm bản đồ biển được treo trên tường,   
+bên dưới là một chiếc bàn cũ và một mảnh
+giấy của ai đó để lại.                  
+5\/1/6
+  Bạn nhặt mảnh giấy lên, không mất     
+nhiều thời gian để bạn nhận ra đó là một
+tờ ghi chú nào đó và kèm theo đó là     
+những nét vẽ nguệch ngoạc. Có lẽ chưa   
+cần để ý nhiều đến nó.                  
+3\/1/7
+   Điện thoại bạn đang rung. Có vẻ như  
+ai đó đang gọi bạn? Sếp bạn đó, ông ấy  
+gọi cho bạn để làm gì nhỉ               
+6\/1/8
+   Cuộc gọi đem đến cho bạn một vài     
+thông tin về vụ án. Ngọn hải đang nơi   
+bạn đang đứng từng được canh gác giữ bởi
+3 người gác biển, hai trong số đó là anh
+em nhà Griffin. Người còn lại là Hanibal
+từng làm tại cảng PortLand.             
+5\/1/9
+   Qua một số nguồn thông tin từ cư dân 
+địa phương, Hannibal được miêu tả là    
+một người có vóc dáng mảnh khảnh, cao.  
+Trái lại, anh em nhà Griffin được nhắc  
+đến là những người to xác và cục tính   
+6\/1/10
+   Một vài người dân cho biết giữa hai  
+anh em có mâu thuẫn với nhau không rõ   
+nguyên nhân, một vài trong số đó kể rằng
+vì phân chia tài sản không hợp lí trong 
+di chúc của gia đình Griffin dẫn đến    
+xung đột giữa hai anh em.               
+6\/1/11
+  Đó là tất cả thông tin bạn nhận được. 
+Cố gắng xâu chuỗi chúng và những manh   
+mối xuất hiện trong game để đưa ra quyết
+định đúng.                              
+   Có thể ghi chép sẽ giúp bạn phân tích
+tốt hơn?                                
+1\/1/12
+   Có vẻ như ở đây đã hết manh mối.     
+3\/0/13
+    Bạn tìm thấy một quyển sổ nhỏ, đây có 
+thể là nhật kí của một trong ba người canh
+biển ở đây.                             
+5\/0/14
+   Bạn đọc nó và cũng là lúc bạn nhận ra
+ đã có một người trong ba người bị giết,
+có thể người viết cuốn nhật kí này chính 
+là người còn sống và đang lẩn trốn khỏi 
+kẻ giết người.                          
+6\/0/15
+   Kẻ sát nhân trong cuốn nhật kí viết  
+là Hannibal, nhưng một người gầy lại
+có thể giết và đe doạ hai người to xác  
+cục mịch, hay chính trong hai anh em có 
+người là thủ phạm giết người và làm giả 
+cuốn nhật kí?                           
+3\/0/16
+   Và nếu trong trường hợp thực sự đã có
+người bỏ mạng thì vụ án này còn nằm trong
+thẩm quyền của bạn?                         
+2\/0/17
+   Bạn đã giao lại vụ án cho cảnh sát   
+trực thuộc bang.                                       
+5\/1/18
+   Bất chấp rủi ro, bạn vẫn bước trên lầu.
+Bạn nhìn thấy tấm kính cửa sổ bị vỡ cùng
+những mảnh vụn của một cái đĩa tròn.    
+   Trong nỗ lực ghép lại đĩa bạn nhận ra
+bị thiếu một mảnh.                      
+3\/1/19
+   Không chỉ có những mảnh vỡ, dưới sàn 
+còn là vũng máu tươi dài, dường như nó  
+đã được lau đi một phần.                
+3\/1/20
+    Lần theo những vết máu bạn tìm đến  
+nói có hai căn phòng riêng biệt. Bạn vào
+phòng nào trước?                        
+6\/0/21             
+   Bạn bước vào căn phòng tối và ngửi thấy
+được mùi thịt hôi thối nồng nặc bao trùm
+cả căn phòng. Bật đèn pin và tát cả những
+gì bạn thấy được là xác của một người đàn
+ông to lớn, nếu không nhầm thì đó là 1 
+trong hai anh em nhà Griffin.           
+5\/0/22
+   Cố gắng chịu mùi hôi thối nồng nặc,  
+bạn lại gần cái xác và thấy cổ họng của 
+nạn nhân bị đứt cùng với động mạch cảnh 
+do hai vết cắt sâu, một trong số đó xẻ  
+qua các lớp mô, xuống tận đốt sống      
+3\/0/23
+   Vùng bụng được xác định bị xé ra một 
+phần bởi vết thương sâu, khiến bộ ruột  
+lòi ra bên ngoài.                       
+4\/0/24
+   Bỗng nhiên một cánh tay quàng qua bạn,
+chưa kịp phản ứng thì xộc lên mũi bạn đã
+là mùi ete nồng nặc tẩm trong một chiếc 
+khăn tay. Bạn mất đi ý thức và gục xuống.
+5\/1/25
+   Bước vào trong phòng, bạn cảm giác   
+như có mùi thịt nồng nặc từ đâu đó nhưng
+không phải từ căn phòng này. Bạn bật đèn
+pin, mọi thứ sáng tỏ trước mắt bạn là một
+kho chứa đồ.                            
+5\/1/26
+   Trước mắt bạn là một quyển giải phẫu 
+cơ thể người và một chiếc bình kì lạ trên
+bàn. Cầm chiếc bình lên, bạn nhận ra đó 
+là một bình rượu vang cũ và nó không còn
+nhiều.                                       
+3\/0/27
+   Bạn đã uống một ngụm rượu nhưng dường
+như nó chưa đủ với bạn. Có nên uống thêm
+không nhỉ?                              
+2\/0/28
+   Men rượu đã xộc lên mũi bạn và hình  
+như trong rượu có gì đó . . . lạ lạ?    
+1\/0/29
+   Bạn bắt đầu nghi ngờ trong rượu có độc.
+4\/0/30
+   Bạn cảm thấy trong miệng mình có vật 
+gì đó.                                    
+                                        
+   Một viên đạn.                        
+2\/1/31
+   Xem bạn tìm được gì nữa này - một tờ báo
+xuất bản từ vài tuần trước.             
+3\/1/32
+   Mọi thứ tờ báo đề cập đều không có giá
+trị đối với bạn, trừ bản tin về "Jack the
+ripper". . .                                
+5\/1/33
+   Khoảng 3h40p sáng, thứ sáu ngày      
+31/08/2010, thi thể của Mary Ann Nichols
+được phát hiện tại Buck's Row. Trước đó 
+một giờ, cô được nhìn thấy lần cuối khi 
+đang đi bộ dọc theo phố Whitechapel.    
+4\/1/34
+   Người nhìn thấy cô lần cuối là bà Emily
+Holland, người từng chung giường với cô
+ở một nhà trọ tập thể trên phố Thrawl,  
+Spitefield.                             
+6\/1/35
+   Cổ họng của Nichols bị cắt đứt bởi hai
+vết cắt sâu, một trong số đó xẻ qua các 
+lớp mô, xuống tận đốt sống. Âm đạo nạn  
+nhân bị đâm hai lần, bụng phía dưới bị xé
+ra một phần bỏi một vết thương sâu, khiến
+bộ ruột lòi ra ngoài.                   
+1\/1/36
+. . .                                      
+7\/1/37
+   Các vụ án trước đây chỉ nhắm đến các 
+cô gái bán hoa, cho đến thời điểm hiện tại,
+phạm vi gây án mở rộng đến các đối tượng
+là trẻ vị thành niên và cả những người đàn
+ông lực lưỡng khoẻ mạnh. Các cơ quan điều
+tra vẫn đang vào việc nhưng chưa có tiến
+triển.                                  
+3\/1/38
+   Và . . . trong tờ báo còn kẹp một mảnh
+giấy? Trông nó như là một phần khi ghép 
+với mảnh giấy bạn tìm được ở tầng một?  
+1\/1/39
+!!!???                                     
+2\/1/40
+   Có vẻ như sự tồn tại của bạn ở đây   
+không phải là duy nhất?                 
+1\/1/41
+   Hắn ta đi rồi.                       
+1\/1/42
+   Hắn đứng trước cửa khá lâu thì rời đi.
+3\/1/43
+   Có thể là tên Hannibal. Giống như hắn
+muốn lấy mạng của bạn vậy.              
+   Hãy cẩn thận.                        
+4\/1/44
+   Vẫn có một căn phòng nằm bên trong góc.
+Nó quá cũ và dường như việc mở ra quá khó
+khăn. Bạn có thể mở được nó nếu có dụng 
+cụ.                                     
+4\/0/45
+   Bạn thấy một người đàn ông đang bị trói.
+Anh ta trông có vẻ như bị nhốt trong nhiều
+ngày và chắc hẳn đây là người còn lại trong
+hai anh em nhà Griffin.                  
+6\/0/46
+   Bạn cởi trói cho anh ta. Với tình trạng
+ hiện tại, anh ta cần đến bệnh viện gần nhất
+nhưng khả năng cao kẻ còn đứng ngoài kia
+sẽ không để bạn đi một cách dễ dàng như 
+vậy. Bạn lựa chọn rời khỏi đây và tìm thêm
+cứu hộ.                                 
+2\/0/47
+   Bạn không tìm thấy thứ gì thích hợp  
+để mở được  cái cửa chết tiệt đó.       
+2\/0/48
+   Có mùi gì đó lạ ở phòng còn lại, nó  
+khiến bạn cảm thấy tò mò.               
+6\/0/49             
+   Bạn bước vào căn phòng tối và ngửi thấy
+được mùi thịt hôi thối nồng nặc bao trùm
+cả căn phòng. Bật đèn pin và tát cả những
+gì bạn thấy được là xác của một người đàn
+ông to lớn, nếu không nhầm thì đó là 1 
+trong hai anh em nhà Griffin.           
+5\/0/50
+   Cố gắng chịu mùi hôi thối nồng nặc,  
+bạn lại gần cái xác và thấy cổ họng của 
+nạn nhân bị đứt cùng với động mạch cảnh 
+do hai vết cắt sâu, một trong số đó xẻ  
+qua các lớp mô, xuống tận đốt sống      
+3\/0/51
+   Vùng bụng được xác định bị xé ra một 
+phần bởi vết thương sâu, khiến bộ ruột  
+lòi ra bên ngoài.                       
+4\/0/52
+   Bỗng nhiên một cánh tay quàng qua bạn,
+chưa kịp phản ứng thì xộc lên mũi bạn đã
+là mùi ete nồng nặc tẩm trong một chiếc 
+khăn tay. Bạn mất đi ý thức và gục xuống.
+2\/1/53
+   Lối ra của tháp đã bị đóng chặt. Bạn 
+lấy ra cây xà beng để cậy cửa.          
+4\/1/54
+   Có ai đó tiền gần tới bạn. Bạn không 
+biết điều đó và khi bạn vẫn đang cố gắng
+để cậy cửa, hắn ta đã knock out bạn bằng
+cây gậy bóng chày.                      
+4\/1/55
+   Bạn tỉnh dậy khi đang ngồi trên ghế,   
+bạn bị chùm đầu bằng một túi chùm cũ. 
+Tất cả những gì bạn cảm nhận được là một
+cái đầu ê ẩm sau cú đánh.               
+4\/1/56
+   Mùi của cái khăn cũng rất khó chịu. Nó 
+tanh và hôi như mùi máu cũ. Không phải hắn
+ta chùm đầu bạn bằng cái khăn lau máu trên
+sàn đó chứ?                             
+3\/1/57
+   Tay chân bạn bị trói chặt vào cái ghế
+ gỗ, việc trốn thoát bây giờ cũng bất khả
+ thi.                                   
+5\/1/58
+   Lúc vừa rồi dường như tên sát nhân   
+nhận ra bạn. Nhưng vì một lý do nào đó  
+khiến hắn lưỡng lự trong việc ra tau và 
+quyết định xuống đóng cửa tháp và đợi   
+thời cơ hạ gục bạn.                     
+3\/1/59
+   Bạn nhận ra có thứ gì đó phía sau bạn.
+Nó giống như chuột? Không phải, có ai đó
+đang cố gắng cắt dây trói.              
+4\/1/60
+   Dụng cụ cắt có vẻ không chuyên dụng 
+lắm. . . hoặc dây trói quá cứng. Nỗi sợ 
+bị phanh thây như những kẻ xấu số vừa   
+nãy khiến bạn mất bình tĩnh             
+4\/1/61
+   May mắn khi chiếc dây trói dần dần   
+được nới lỏng. Bàn tay tê cứng giờ đã có
+lại cảm giác. Bạn cũng nhận ra người đang
+cố giúp bạn là người bạn đã cứu khi nãy.
+2\/1/62
+   Bạn cảm nhận được từng nhịp thở của anh
+ta.                                       
+2\/1/63
+  Bên ngoài có tiếng động? Hắn phát hiện ra 
+rồi à?                                  
+6\/1/64
+   Dây trói đã đứt. Bạn cởi miếng vải chùm
+đầu ghê tởm đó, bạn chưa thể lấy lại ngay
+thị lực để có thể nhìn được mọi thứ xung
+quanh. Người kia cũng nhận thấy việc mình
+làm đã bị phát giác nên đã lùi ra phía sau 
+cánh cửa.                               
+3\/1/65
+   Mắt bạn chưa thể lấy lại thị lực. Trong
+ánh sáng lờ mờ bạn thấy người kia lấy   
+được thứ gì đó và đợi.                   
+2\/1/66
+   Một vài phút sau chiếc cửa bị đạp phăng
+Tên súc sinh đó bước vào.                
+3\/1/67
+   Người đàn ông đứng sau cánh của lao ra,
+sẵn trong tay cây gậy gỗ với được, anh ta
+định đánh lén tên Hannibal.             
+1\/1/68
+   Anh ta vung hụt.                      
+4\/1/69
+   Tên sát nhân né được và hắn lao vào,  
+hai người vào thế giằng co. Bạn lấy được
+thị lực nhưng phòng quá tối. Bạn cố lết 
+đến phía công tắc điện và bật nó.        
+3\/1/70
+   Căn phòng sáng bừng, bạn thấy trên bàn,
+ngay phía dưới công tắc là cây súng của 
+bạn.                                    
+2\/0/71
+   Bạn giơ súng lên chĩa về phía cuộc ẩu
+đả. Mọi thứ dùng lại trong giây lát.     
+5\/0/72
+   Bạn hét lên một tiếng. Hắn chần chừ  
+trong giây lát rồi bất ngờ vung con dao 
+trong tay đâm liên tiếp vào người đàn ông
+xấu số. Bạn bóp cò và nhận ra súng đã bị
+tháo hết đạn.                           
+3\/0/73
+   Chưa hết bàng hoàng vì lựa chọn sai  
+của mình, tên sát nhân bất ngờ lao đến 
+bạn và lần này là một đòn chí tử.       
+1\/0/74
+   Súng đã bị tháo hết đạn.             
+3\/0/75
+   Chưa hết bàng hoàng vì lựa chọn sai  
+của mình, tên sát nhân bất ngờ lao đến 
+bạn và lần này là một đòn chí tử.       
+1\/1/77
+   Súng đã bị tháo hết đạn.             
+3\/1/77
+   May mắn tên sát nhân không nhận ra viên
+đạn bạn tìm thấy được trong chai rượu.  
+Bạn lắp viên đạn đó vào trong băng.     
+1\/1/78
+   Bạn hét về phía tên sát nhân         
+4\/1/79
+   Tên sát nhân nghe thấy lời bạn nói. 
+Hắn lưỡng lự một lúc nhưng vẫn quyết định
+đâm con dao xuống. Không một phút đắn đo
+nào nữa, bạn quyết định nổ súng.        
+
+ 

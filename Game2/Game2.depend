@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1713378862 source:d:\github\gameproject\game2\main.cpp
-	<SDL.h>
-	<SDL_mixer.h>
-	<SDL_image.h>
-	<iostream>
-
